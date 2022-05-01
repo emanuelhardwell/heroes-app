@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           Heroes App
@@ -32,6 +32,7 @@ export const NavBar = () => {
                 Home
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -42,6 +43,7 @@ export const NavBar = () => {
                 DC
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink
                 exact
@@ -52,6 +54,18 @@ export const NavBar = () => {
                 Marvel
               </NavLink>
             </li>
+
+            <li className="nav-item">
+              <NavLink
+                exact
+                activeClassName="active"
+                className="nav-link"
+                to="/search"
+              >
+                Search
+              </NavLink>
+            </li>
+
             <li className="nav-item">
               <NavLink
                 exact
