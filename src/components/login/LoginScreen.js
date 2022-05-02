@@ -19,7 +19,9 @@ export const LoginScreen = ({ history }) => {
       },
     });
 
-    history.replace("/");
+    const pathName = localStorage.getItem("pathName") || "/";
+
+    history.replace(pathName);
   };
   return (
     <div className="container mt-5">
